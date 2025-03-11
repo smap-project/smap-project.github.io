@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SMAP</title>
+<!--   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">SMAP: Self-supervised Motion Adaptation for Physically Plausible Humanoid Whole-body Control</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+<!--               <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous</a>,</span> -->
+              <span>Anonymous</span>
+<!--                 <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span> -->
+                  </div>
+
+<!--                   <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+<!--                       <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+<!--                     <span class="link-block">
+                      <a href="static/pdfs/SG-GS.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+<!--                   <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+<!--                 <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-fluid">
+    <div class="hero-body" style="display: flex; justify-content: center; align-items: center;">
+      <!-- 设置容器为16:9比例 -->
+      <div style="position: relative; width: 60%; aspect-ratio: 16 / 9;">
+<!--         <iframe id="tree" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                src="https://www.youtube.com/embed/z9l_hED9Ss0?si=32F3fYmhSFNw6YP7" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> -->
+        <iframe id="tree" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                src="//player.bilibili.com/player.html?isOutside=true&aid=114124210045171&bvid=BV1rT9XY4Ep1&cid=28751168657&p=1"
+                title="video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+<!--         <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114124210045171&bvid=BV1rT9XY4Ep1&cid=28751168657&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> -->
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-fluid">
+    <div class="hero-body" style="display: flex; justify-content: center; align-items: center;">
+      <iframe id="tree" width="70%" height='500' src="https://www.youtube.com/embed/0HyBypGEeAI?si=nCJVQS8-r7l50MIO&amp;controls=0" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section> -->
+<!-- <section class="hero teaser">
+  <div class="container is-fluid">
+    <div class="hero-body" style="display: flex; justify-content: center; align-items: center;">
+      <div style="position: relative; width: 70%; padding-bottom: 56.25%; /* 16:9 ratio */">
+        <iframe id="tree" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                src="https://www.youtube.com/embed/0HyBypGEeAI?si=nCJVQS8-r7l50MIO&amp;controls=0" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section> -->
+  
+<!-- <section class="hero teaser">
+  <div class="container is-fluid">
+    <div class="hero-body" style="display: flex; justify-content: center; align-items: center;">
+      <div style="position: relative; width: 60%; aspect-ratio: 16 / 9;">
+        <iframe id="tree" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                src="https://www.youtube.com/embed/0HyBypGEeAI?si=nCJVQS8-r7l50MIO&amp;controls=0" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section> -->
+  
+<!-- End teaser video
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Reconstructing photo-realistic and topology-aware animatable human avatars from monocular videos remains challenging in computer vision and graphics. Recently, methods using 3D Gaussians to represent the human body have emerged, offering faster optimization and real-time rendering. However, due to ignoring the crucial role of human body semantic information which represents the explicit topological structure and intrinsic structure within the human body, they fail to achieve fine-detail reconstruction of dynamic human avatars. To address this issue, we propose SG-GS, which uses semantics-embedded 3D Gaussians, skeleton-driven rigid deformation, and non-rigid cloth dynamics deformation to create photo-realistic human avatars from monocular videos. We then design a Semantic Human-Body Annotator (SHA) which utilizes SMPL's semantic prior for efficient body part semantic labeling. The generated labels are used to guide the optimization of Gaussian semantic attributes. To capture the explicit topological structure of human body, we also propose a 3D network that integrates both topological and geometric associations for human avatar deformation. We further implement three key strategies to enhance the semantic accuracy of 3D Gaussians and rendering quality: semantic projection with 2D regularization, semantic-guided density regularization and semantic-aware regularization with neighborhood consistency.
+          </p>
+        </div>
+        <figure class="image is-centered">
+          <img src="static/images/pipeline_page-0001.jpg" alt="Pipeline">
+          <figcaption class="has-text-centered">Figure 1: Overview of the proposed pipeline.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-1 has-text-centered" style="font-size: 2.0rem; font-weight: 500; margin-bottom: 40px; color: #4A4A4A;">
+        Whole-body Control in H1
+      </h2>
+      <div class="video-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <!-- Video 1 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/3-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/10-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/5-1.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="video-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <!-- Video 1 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/9-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/8-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/1-1.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="video-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <!-- Video 1 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/11-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/4-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-item" style="flex: 1 1 25%; min-width: 300px; text-align: center;">
+          <video controls autoplay loop muted style="width: 80%; max-width: 400px; height: auto;">
+            <source src="videos/7-1.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+
+
+
+
+
+
+
+  
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Emphasized Title -->
+      <h2 class="title is-1 has-text-centered" style="font-size: 2.0rem; font-weight: 500; margin-bottom: 40px; color: #4A4A4A;">
+        Whole-body Control in Isaac Gym
+      </h2>
+      <div class="video-container" style="display: flex; justify-content: space-evenly; align-items: center;">
+        <!-- First video -->
+        <div class="video-item" style="text-align: center;">
+          <video controls autoplay loop muted style="max-width: 500px; height: auto;">
+            <source src="videos/5-7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Second video -->
+        <div class="video-item" style="text-align: center;">
+          <video controls autoplay loop muted style="max-width: 500px; height: auto;">
+            <source src="videos/113-4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="video-container" style="display: flex; justify-content: space-evenly; align-items: center;">
+        <!-- First video -->
+        <div class="video-item" style="text-align: center;">
+          <video controls autoplay loop muted style="max-width: 500px; height: auto;">
+            <source src="videos/2-6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Second video -->
+        <div class="video-item" style="text-align: center;">
+          <video controls autoplay loop muted style="max-width: 500px; height: auto;">
+            <source src="videos/80-28-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="video-container" style="display: flex; justify-content: space-evenly; align-items: center;">
+        <!-- First video -->
+        <div class="video-item" style="text-align: center;">
+          <video controls autoplay loop muted style="max-width: 500px; height: auto;">
+            <source src="videos/2-10.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Second video -->
+        <div class="video-item" style="text-align: center;">
+          <video controls autoplay loop muted style="max-width: 500px; height: auto;">
+            <source src="videos/7-12.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============================================================================== -->
+<section class="hero is-small">
+
+  
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Novel Pose</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <video controls autoplay loop muted style="max-width: 50%; height: auto;">
+        <source src="static/videos/banner_video.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        <h2 class="subtitle has-text-centered">First video description.</h2>
+      </div>
+      <div class="item" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <video controls autoplay loop muted style="max-width: 50%; height: auto;">
+        <source src="static/videos/banner_video.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+        <h2 class="subtitle has-text-centered">First video description.</h2>
+      </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!--   <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
