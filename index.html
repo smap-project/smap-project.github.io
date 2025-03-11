@@ -166,6 +166,27 @@
   </div>
 </section>
 
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper presents a novel framework that enables real-world humanoid robots to maintain stability while performing human-like motion. Current methods train a policy which allows humanoid robots to follow human body using the massive retargeted human data via reinforcement learning. However, due to the heterogeneity between human and humanoid robot motion, directly using retargeted human motion reduces training efficiency and stability. To this end, we introduce SMAP, a novel whole-body tracking framework that bridges the gap between human and humanoid action spaces, enabling accurate motion mimicry by humanoid robots. The core idea is to use a vector-quantized periodic autoencoder to capture generic atomic behaviors and adapt human motion into physically plausible humanoid motion. This adaptation accelerates training convergence and improves stability when handling novel or challenging motions. We then employ a privileged teacher to distill precise mimicry skills into the student policy with a proposed decoupled reward. We conduct experiments in simulation and real world and demonstrate the superiority stability and performance of our approach over state-of-the-art methods, offering practical guidelines for advancing whole-body control in humanoid robots.
+          </p>
+        </div>
+        <!-- 在这里插入 Pipeline 图 -->
+        <figure class="image is-centered">
+          <img src="static/images/pipeline.jpg" alt="Pipeline">
+          <figcaption class="has-text-centered">Overview of the proposed pipeline.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+  
 <!-- Teaser video-->
 <!-- <section class="hero teaser">
   <div class="container is-fluid">
